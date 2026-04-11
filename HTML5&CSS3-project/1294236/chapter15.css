@@ -1,0 +1,74 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f8f9fa;
+}
+header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navtext {
+  text-align: center;
+  border-bottom: 1px solid #dadce0;
+  color: #5f6368;
+  padding: 1%;
+}
+.copyright {
+  background-color: #202124;
+  text-align: center;
+  margin-top: 60px;
+  padding: 1%;
+  border-top: 1px solid #3c4043;
+  font-size: 1rem;
+  color: #afb6be;
+}
+.btncontainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+button {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.3);
+}
+button a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 58px;
+}
+button a:hover {
+  background-color: #1a73e8;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 #1a73e8;
+}
+/*chapter 15*/
+p {
+  background-color: LightGrey;
+
+  /* 15.2 HEX Colors */
+
+  color: #3c3c3c;
+
+  /* 15.3 RGB Colors (with Alpha) */
+
+  border: 5px solid rgba(128, 128, 128, 0.5);
+
+  /* 15.4 Grey Colors (Standard RGB) */
+
+  background-color: rgb(240, 240, 240);
+
+  padding: 20px;
+  border-radius: 8px;
+  text-align: justify;
+}

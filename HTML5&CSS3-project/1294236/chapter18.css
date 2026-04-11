@@ -1,0 +1,219 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f8f9fa;
+}
+header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navtext {
+  text-align: center;
+  border-bottom: 1px solid #dadce0;
+  color: #5f6368;
+  padding: 1%;
+}
+.copyright {
+  background-color: #202124;
+  text-align: center;
+  margin-top: 60px;
+  padding: 1%;
+  border-top: 1px solid #3c4043;
+  font-size: 1rem;
+  color: #afb6be;
+}
+.btncontainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+button {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.3);
+}
+button a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 58px;
+}
+button a:hover {
+  background-color: #1a73e8;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 #1a73e8;
+}
+/*chapter 018*/
+.content {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+h2 {
+  color: #1a73e8;
+  border-bottom: 2px solid #e8f0fe;
+  padding-bottom: 10px;
+}
+
+/* 18.1 Display & 18.2 Visibility */
+.inline-blocks {
+  display: inline-block; /* Element stays in line but accepts width/height */
+  width: 150px;
+  background: #e8f0fe;
+  padding: 10px;
+  border: 1px solid #1a73e8;
+}
+
+.hidden {
+  display: none;
+} /* Element is removed from the layout completely */
+.invisible {
+  visibility: hidden;
+} /* Space is preserved, but element is hidden */
+
+/* 18.3 Object-fit */
+img {
+  width: 200px;
+  height: 150px;
+  background-color: #eee;
+  object-fit: cover; /* 18.3.2: Resizes image to fill without stretching */
+  border: 2px solid #ddd;
+}
+
+/* 18.4 Cursor */
+.my-element {
+  cursor: help;
+  background: #fff3cd;
+  padding: 10px;
+}
+
+/* 18.5 Overflow */
+.container-overflow {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #333;
+  overflow: auto; /* Adds scrollbars only when content exceeds 50px */
+}
+
+/* 18.6 Opacity vs RGBA */
+.container-opacity-base {
+  background-color: #1a73e8;
+  padding: 10px;
+  margin: 5px 0;
+}
+.opacity-rule {
+  opacity: 0.5;
+} /* Everything inside becomes transparent */
+.container-transparent {
+  background-color: rgba(
+    26,
+    115,
+    232,
+    0.5
+  ); /* Only background is transparent */
+  padding: 10px;
+  color: white; /* Text stays 100% opaque */
+}
+
+/* 18.7 Shadows */
+h1 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.box-shadow-demo {
+  padding: 20px;
+  box-shadow: 10px 10px 10px grey; /* h-offset, v-offset, blur, color */
+}
+
+/* 18.8 Multiple Columns */
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid #ddd;
+}
+.newspaper h1 {
+  column-span: all;
+  text-align: center;
+}
+
+/* 18.9 Tables & 18.10 Lists */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background-color: #f8f9fa;
+}
+
+ul.circle {
+  list-style-type: circle;
+}
+ul.square {
+  list-style-type: square;
+}
+ol.upper-roman {
+  list-style-type: upper-roman;
+}
+ol.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+/* 18.11 Transforms (2D & 3D) */
+.test-move {
+  transform: translate(20px, 10px);
+  background: #d1e7dd;
+}
+.test-scale {
+  transform: scale(1.1);
+  background: #fff3cd;
+  width: fit-content;
+}
+
+/* Rotation */
+.test-rotate1 {
+  transform: rotateX(150deg);
+}
+.test-rotate2 {
+  transform: rotateY(150deg);
+}
+.test-rotate3 {
+  transform: rotateZ(45deg);
+}
+
+/* Skew */
+.test-skew1 {
+  transform: skewX(20deg);
+}
+.test-skew2 {
+  transform: skewY(10deg);
+}
+.test-skew3 {
+  transform: rotate(10deg) skew(20deg, 10deg);
+}
+@media (min-width: 768) {
+  .content {
+    padding: 5px;
+    width: auto;
+  }
+}

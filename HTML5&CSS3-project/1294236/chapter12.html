@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/my.png" type="image/x-icon" />
+    <link rel="stylesheet" href="chapter12.css" />
+    <title>Chapter 012</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="navtext">CSS SELECTOR</h1>
+    </header>
+    <main class="content">
+      <!-- Basic Selectors -->
+      <section>
+        <h2>Basic Selectors</h2>
+        <div>
+          <p id="my-text">ID Selector: Some text</p>
+          <p class="my-text main">Multiple Class Selector: Some text</p>
+          <p class="my-text">Class Selector: Another text</p>
+        </div>
+        <p>Type Selector: Another text with no class</p>
+      </section>
+
+      <hr />
+
+      <!--  Link and Cursor Interaction -->
+      <section>
+        <h2>Pseudo-classes: Links & Interaction</h2>
+        <a>This is not a link (no href)</a><br />
+        <a href="https://neodtruman.com" target="_blank"
+          >My Website (Visited/Link)</a
+        ><br />
+        <button class="bton">Hover/Click/Focus Button</button>
+      </section>
+
+      <hr />
+
+      <!-- Form Status and Validation -->
+      <section>
+        <h2>Pseudo-classes: Forms & Validation</h2>
+        <form action="">
+          <p>Enabled: <input type="text" value="I am enabled" /></p>
+          <p>Disabled: <input type="text" value="I am disabled" disabled /></p>
+          <p>
+            Checked:
+            <label
+              ><input type="radio" name="gender" /> <span>Male</span></label
+            >
+            <label
+              ><input type="checkbox" /> <span>Accept Agreement</span></label
+            >
+          </p>
+          <p>
+            Required (Valid/Invalid):
+            <input type="text" name="fname" required />
+          </p>
+          <p>
+            Pattern (3 letters):
+            <input type="text" pattern="[A-Za-z]{3}" value="a" />
+          </p>
+          <p>
+            Out of Range (1-6):
+            <input type="number" min="1" max="6" value="8" />
+          </p>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <hr />
+
+      <!--  Structural Selectors -->
+      <section>
+        <h2>Structural Selectors (Child & Type)</h2>
+        <div class="structure-test">
+          <div>Line 1 (div)</div>
+          <p>Line 2 (p)</p>
+          <p>Line 3 (p)</p>
+        </div>
+        <div class="only-child-test">
+          <p>I am an only child</p>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Other Pseudo-classes -->
+      <section>
+        <h2>Other Pseudo-classes</h2>
+        <div title="Empty test"></div>
+        <a href="#target1">Go to Target 1</a> |
+        <a href="#target2">Go to Target 2</a>
+        <p id="target1">I am Target 1</p>
+        <p id="target2">I am Target 2</p>
+
+        <div class="nav-links">
+          <a class="nav-lnk" href="#">Articles</a>
+          <a class="nav-lnk" href="#">Links (Targeted by Chain)</a>
+          <a class="nav-lnk" href="#">About (Targeted by Chain)</a>
+          <a class="nav-lnk" href="#">Newsletter</a>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Pseudo-elements -->
+      <section>
+        <h2>Pseudo-elements</h2>
+        <p class="text-effect">
+          First Letter and First Line Effect:<br />This is the second line of
+          the paragraph.
+        </p>
+        <p><label class="required">Username: </label><input type="text" /></p>
+        <p>Select some text here to see the ::selection effect.</p>
+      </section>
+
+      <hr />
+
+      <!--  Combined Selectors -->
+      <section class="container">
+        <h2>Combined Selectors</h2>
+        <div>
+          <p>Descendant: Line 1</p>
+        </div>
+        <p>Child/Sibling: Line 2</p>
+        <p>Sibling: Line 3</p>
+      </section>
+
+      <hr />
+
+      <!-- Attribute Selectors -->
+      <section>
+        <h2>Attribute Selectors</h2>
+        <p class="word">Exact/Start: "word"</p>
+        <p class="highlight word">Space-separated: "highlight word"</p>
+        <p class="word-highlight">Hyphen-separated: "word-highlight"</p>
+        <p class="words">Starts with: "words"</p>
+      </section>
+    </main>
+    <div class="btncontainer">
+      <div class="btn1">
+        <button><a href="chapter11.html"> &leftarrow; chapter 11</a></button>
+      </div>
+      <div class="btn2">
+        <button><a href="chapter13.html"> Next &RightArrow;</a></button>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        &copy; 2026 atikurrahman. All Rights Reserved | Powered By Atikur
+        Rahman.
+      </div>
+    </footer>
+  </body>
+</html>

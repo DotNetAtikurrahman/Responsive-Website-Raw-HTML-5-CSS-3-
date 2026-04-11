@@ -1,0 +1,212 @@
+/* --- CHAPTER 12: SELECTOR STYLING --- */
+
+/* 12.1 Universal Selector */
+
+body * p {
+  color: #444;
+  font-size: 1rem;
+}
+
+/* 12.2 Type Selector */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  margin: 20px;
+}
+
+h2 {
+  color: #2c3e50;
+  border-left: 5px solid #3498db;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+/*  ID Selector  */
+#my-text {
+  font-weight: bold;
+  background-color: #e8f4fd;
+  padding: 5px;
+}
+
+/* Class Selector  */
+.my-text {
+  border-bottom: 1px dashed #3498db;
+}
+
+/*Multiple-class Selector */
+.my-text.main {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/*  Status of Links  */
+:link {
+  color: #3498db;
+  text-decoration: none;
+}
+:visited {
+  color: #9b59b6;
+}
+
+/*  Cursor Interaction (Order: focus > hover > active)  */
+.bton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bton:focus {
+  outline: 3px solid #99cfff;
+  color: white;
+}
+.bton:hover {
+  background-color: #2980b9;
+}
+.bton:active {
+  background-color: #1c5980;
+}
+
+/*  Status of Elements */
+:enabled {
+  border: 1px solid #3498db;
+}
+:disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+input:checked + span {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/*  Form Validation */
+input:invalid {
+  background-color: #fce4e4;
+  border: 1px solid #e74c3c;
+}
+input:required {
+  border-left: 5px solid #f1c40f;
+}
+input:out-of-range {
+  background-color: #fff3cd;
+}
+
+/*  Child Elements  */
+p:first-child {
+  font-variant: small-caps;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+p:nth-child(even) {
+  color: #2c3e50;
+}
+
+/*  Others Pseudo-classes  */
+div:empty {
+  height: 20px;
+  border: 1px dotted #ccc;
+  background: #fafafa;
+}
+:target {
+  border: 2px solid #e67e22;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/*  CSS Pseudo-elements  */
+p::first-letter {
+  font-size: 2em;
+  color: #3498db;
+  float: left;
+  margin-right: 5px;
+}
+.required::before {
+  content: " (Required) ";
+  color: #e74c3c;
+  font-size: 0.8rem;
+}
+p::selection {
+  background: #3498db;
+  color: white;
+}
+
+/*  Combined Selectors  */
+.container p {
+  margin-left: 15px;
+  font-style: italic;
+}
+.container > p {
+  border-left: 2px solid #3498db;
+  padding-left: 10px;
+}
+
+/* Layout Design */
+.content {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: #eee;
+  margin: 40px 0;
+}
+header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navtext {
+  text-align: center;
+  border-bottom: 1px solid #dadce0;
+  color: #5f6368;
+  padding: 1%;
+}
+.copyright {
+  background-color: #202124;
+  text-align: center;
+  margin-top: 60px;
+  padding: 1%;
+  border-top: 1px solid #3c4043;
+  font-size: 1rem;
+  color: #afb6be;
+}
+.btncontainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+button {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.3);
+}
+button a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 58px;
+}
+button a:hover {
+  background-color: #1a73e8;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 #1a73e8;
+}

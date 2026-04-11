@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/my.png" type="image/x-icon" />
+    <link rel="stylesheet" href="chapter2.css" />
+    <title>Chapter 02</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="navtext">HTML ELEMENTS</h1>
+    </header>
+
+    <main class="content">
+      <div class="item1">
+        <h3>All types of Heading in html</h3>
+        <h1>We are heading</h1>
+        <h2>We are heading</h2>
+        <h4>We are heading</h4>
+        <h5>We are heading</h5>
+        <h6>We are heading</h6>
+      </div>
+      <div class="item2">
+        <h3>Html Paragraph</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+          perspiciatis voluptatibus commodi animi ea consequatur illum
+          temporibus, vel harum ullam ab assumenda, cupiditate, possimus iste.
+          Aliquid deleniti sit quam exercitationem eos consectetur enim rerum,
+          praesentium nulla porro ipsum a voluptatibus quos necessitatibus autem
+          fugit corrupti saepe voluptatum! Expedita, excepturi corporis.
+        </p>
+      </div>
+      <div class="item3">
+        <h3>Html Hyeperlinks</h3>
+        <a href="home.html" target="_blank">Homepage</a>
+        <a href="#internallink">Go to Footer</a>
+        <a href="images/atikur with pose.png" download="youcandownload"
+          >download Now</a
+        >
+      </div>
+      <div class="item4">
+        <h3>Html Image </h3>
+        <div class="image">
+          <img
+            src="images/mssql.png"
+            alt="serverimage"
+            width="250px"
+            height="200px"
+          />
+        </div>
+        <h3>Images Maping</h3>
+        <div class="imagemap">
+          <img
+            src="images/atikur with pose.png"
+            alt="myimage"
+            width="300px"
+            height="250px"
+            usemap="#myimage"
+          />
+          <map name="myimage">
+            <area shape="rect" coords="79,143,576,507" href="#" alt="#" />
+          </map>
+        </div>
+        <h3>Responsive image</h3>
+        <div class="responsiveimage">
+          <p>resize the browser to see the loading different image</p>
+          <picture>
+            <source media="(min-width:1200px)" srcset="images/images.png">
+            <source media="(min-width:768px)" srcset="images/angular.png">
+            <img src="images/html.jpg" alt="Default Image">
+          </picture>
+        </div>
+      </div>
+      <div class="item5">
+        <h3>unorderlist</h3>
+        
+        <ul>
+          <li>Lorem blah!!!</li>
+          <li>Lorem blah!!!</li>
+          <li>Lorem blah!!!</li>
+          <li>Lorem blah!!!</li>
+          <li>Lorem blah!!!</li>
+        </ul>
+        <h3>orderlist</h3>
+        <ol>
+          <li>Lorem blah!!!</li>
+          <li>Lorem blah!!!</li>
+          <li>Lorem blah!!!</li>
+          <li>Lorem blah!!!</li>
+          <li>Lorem blah!!!</li>
+        </ol>
+         <h3>Descriptionlist</h3>
+       <dl>
+        <dt>Html
+          <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, molestias.</dd>
+        </dt>
+        <dt>Css
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, velit!</dd>
+        </dt>
+        <dt>javascript
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, velit?</dd>
+        </dt>
+        <dt> Jquery
+          <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, provident?</dd>
+        </dt>
+        <dt>Angular
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nostrum?</dd>
+        </dt>
+       </dl>
+      </div>
+      <div class="item6">
+       
+        <table>
+          <caption>Course Table</caption>
+          <thead>
+            <tr>
+              <th>Html</th>
+              <th>Css</th>
+              <th>Javascript</th>
+              <th>Jquery</th>
+              <th>Angular</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1200tk</td>
+              <td>2000tk</td>
+              <td>3000tk</td>
+              <td>4000tk</td>
+              <td>5000tk</td>
+            </tr>
+            <tr>
+              <td>1200tk</td>
+              <td>2000tk</td>
+              <td>3000tk</td>
+              <td>4000tk</td>
+              <td>5000tk</td>
+            </tr>
+            <tr>
+              <td>1200tk</td>
+              <td>2000tk</td>
+              <td>3000tk</td>
+              <td>4000tk</td>
+              <td>5000tk</td>
+            </tr>
+            <tr>
+              <td>1200tk</td>
+              <td>2000tk</td>
+              <td>3000tk</td>
+              <td>4000tk</td>
+              <td>5000tk</td>
+            </tr>
+            <tr>
+              <td>1200tk</td>
+              <td>2000tk</td>
+              <td>3000tk</td>
+              <td>4000tk</td>
+              <td>5000tk</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+      <div class="item7">
+        <h3>Breaks</h3>
+        <p>Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. Ratione quia reiciendis, temporibus repellat dolorem alias nesciunt deleniti sequi quasi dicta!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident ipsam dolores aliquid quae nemo laborum temporibus blanditiis optio labore? Recusandae!</p><hr>
+        <h3>progressbar</h3>
+        <p>progressbar</p>
+        <p> c# skill
+        <progress value="90" max="100"></progress> 90%
+        </p>
+        <p>meter</p>
+        <p> T-SHIRT remain
+        <progress value="90" max="1000"></progress> 90 pc
+        </p>
+
+        <h3>Computer code</h3>
+        <code>
+          if(age==25) {
+            console.writeline("Atikur rahman");
+          }
+          
+        </code>
+        <pre>
+            tumi ki amer bondhu 
+              taile jemon aso temon i thako na
+                        yeh i always respect you.....
+        </pre>
+
+        <h3>html Entities</h3>
+        &af; &target; &iacute; &kappa; &Uacute;&rAarr;
+        <p>if you need html Reserved word just type & then your destination value visul studio give you bro</p>
+
+
+
+      </div>
+      <div class="item8">
+        <h3>Iframe for Use google map</h3>
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" frameborder="0">To DESIGN live </iframe>
+      </div>
+    </main><hr>
+
+    <div class="btncontainer">
+      <div class="btn1">
+        <button><a href="chapter1.html"> &leftarrow; Chapter 1</a></button>
+      </div>
+      <div class="btn2">
+        <button><a href="chapter3.html"> Next &RightArrow;</a></button>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright" id="internallink">
+        &copy; 2026 atikurrahman. All Rights Reserved | Powered By Atikur
+        Rahman.
+      </div>
+    </footer>
+  </body>
+</html>

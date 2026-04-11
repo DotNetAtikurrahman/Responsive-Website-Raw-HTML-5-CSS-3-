@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/my.png" type="image/x-icon" />
+    <link rel="stylesheet" href="chapter19.css" />
+    <title>Chapter 019</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="navtext">CSS LAYOUT</h1>
+    </header>
+
+    <main class="content">
+      <!-- 1 CSS Position -->
+      <section>
+        <h2>1 CSS Position</h2>
+
+        <!-- 1.2 Relative -->
+        <div class="parent-relative">
+          <div class="normal">Normal element</div>
+          <div class="relative">I am relative!</div>
+        </div>
+
+        <!-- 1.3 Absolute -->
+        <div class="positioned-ancestor">
+          <div class="non-positioned">
+            <div class="absolute">I am absolute!</div>
+          </div>
+        </div>
+
+        <!-- 1.4 Fixed -->
+        <div class="fixed">I am fixed!</div>
+        <div class="big-spacer">
+          A big element to allow scrolling for fixed/sticky tests.
+        </div>
+
+        <!-- 1.5 Sticky -->
+        <div class="sticky-container">
+          <p>Try to scroll inside this frame to see stickiness.</p>
+          <div class="sticky">I am sticky!</div>
+          <p>Sticky content continues here...</p>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 2 CSS Float -->
+      <section>
+        <h2>2 CSS Float and Clear</h2>
+        <div class="container-float">
+          <div class="child-float">I'm the 1st child</div>
+          <div class="child-float">I'm the 2nd child</div>
+          <!-- 2.2 Clear -->
+          <div class="no-float">I'm the 3rd child (cleared)</div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 3 CSS Z-index -->
+      <section>
+        <h2>3 CSS Z-index</h2>
+        <div class="container-z">
+          <div class="absolute child-z z-minus-two">z-index: -2</div>
+          <div class="absolute child-z z-minus-one">z-index: -1</div>
+          <div class="absolute child-z z-zero">z-index: 0</div>
+          <div class="absolute child-z z-one">z-index: 1</div>
+          <div class="child-z z-two">z-index: 2; but I'm not positioned</div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 4 CSS Flexbox -->
+      <section>
+        <h2>4 CSS Flexbox</h2>
+        <div class="flex-container">
+          <div class="flex-item">flex item 1</div>
+          <div class="flex-item">flex item 2</div>
+          <div class="flex-item">flex item 3</div>
+        </div>
+
+        <!-- 4.2.7 Auto Margin for Navigation -->
+        <div class="flex-nav">
+          <div class="flex-item lnk-home">HOME</div>
+          <div class="flex-item">Contact</div>
+          <div class="flex-item">Login</div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 5 CSS Grid -->
+      <section>
+        <h2>5 CSS Grid</h2>
+        <div class="grid-container">
+          <div class="grid-item">Item 1</div>
+          <div class="grid-item">Item 2</div>
+          <div class="grid-item">Item 3</div>
+          <div class="grid-item">Item 4</div>
+          <div class="grid-item">Item 5</div>
+          <div class="grid-item">Item 6</div>
+          <div class="grid-item">Item 7</div>
+          <div class="grid-item">Item 8</div>
+          <div class="grid-item">Item 9</div>
+        </div>
+
+        <!-- 5.2.10 Grid Template Areas -->
+        <div class="grid-layout">
+          <div class="grid-item area-header">Header</div>
+          <div class="grid-item area-menu">Menu</div>
+          <div class="grid-item area-main">Main</div>
+          <div class="grid-item area-sidebar">Sidebar</div>
+          <div class="grid-item area-footer">Footer</div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 6 CSS Alignment -->
+      <section>
+        <h2>6 CSS Alignment</h2>
+
+        <!-- Horizontal Center -->
+        <div class="align-container">
+          <div class="align-child">I'm the child element (centered)</div>
+        </div>
+
+        <!-- Perfect Centering (Flex) -->
+        <div class="flex-center-container">
+          <div class="flex-center-item">Perfect centering!</div>
+        </div>
+      </section>
+    </main>
+
+    <div class="btncontainer">
+      <div class="btn1">
+        <button><a href="chapter18.html"> &leftarrow; Chapter 18</a></button>
+      </div>
+      <div class="btn2">
+        <button><a href="chapter20.html"> Next &RightArrow;</a></button>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        &copy; 2026 atikurrahman. All Rights Reserved | Powered By Atikur
+        Rahman.
+      </div>
+    </footer>
+  </body>
+</html>

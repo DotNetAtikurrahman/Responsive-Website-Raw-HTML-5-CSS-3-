@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f8f9fa;
+}
+header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navtext {
+  text-align: center;
+  border-bottom: 1px solid #dadce0;
+  color: #5f6368;
+  padding: 1%;
+}
+.copyright {
+  background-color: #202124;
+  text-align: center;
+  margin-top: 60px;
+  padding: 1%;
+  border-top: 1px solid #3c4043;
+  font-size: 1rem;
+  color: #afb6be;
+}
+.btncontainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+button {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.3);
+}
+button a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 58px;
+}
+button a:hover {
+  background-color: #1a73e8;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 #1a73e8;
+}
+/*chapter 16*/
+section {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e1e4e8;
+}
+
+h2 {
+  color: #1a73e8;
+  border-bottom: 2px solid #e8f0fe;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+/* 16.1.2 Text Decoration Style */
+
+.p1 {
+  text-decoration: underline blue double;
+}
+.p2 {
+  text-decoration: underline red dotted;
+}
+.p3 {
+  text-decoration: underline green dashed;
+}
+.p4 {
+  text-decoration: underline orange wavy;
+}
+
+/* 16.1.4 Handling Whitespaces */
+
+section p {
+  white-space: normal;
+}
+
+/* 16.1.5 Text Overflow */
+
+.test-clip,
+.test-ellipsis {
+  width: 200px;
+  background: #f1f3f4;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 5px;
+  margin: 10px 0;
+}
+.test-clip {
+  text-overflow: clip;
+}
+.test-ellipsis {
+  text-overflow: ellipsis;
+}
+
+/* 16.1.6 Word Wrap & 16.1.7 Word Break */
+.test-word-wrap {
+  overflow-wrap: break-word;
+} /* Modern version of word-wrap */
+.test-keep-all {
+  word-break: keep-all;
+}
+.test-break-word {
+  word-break: break-word;
+}
+.test-break-all {
+  word-break: break-all;
+}
+
+/* 16.2 Text Spacing */
+.test-one {
+  letter-spacing: 2px;
+  word-spacing: 10px;
+}
+.test-two {
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+/* 16.2.3 Line Height Vertical Align */
+section div {
+  height: 100px;
+  background: #e8f0fe;
+  line-height: 100px;
+  text-align: center;
+}
+
+/* 16.3 Text Position */
+.test-three {
+  text-align: right;
+}
+.test-two {
+  text-align: center;
+}
+.test-one {
+  text-align: justify;
+}
+
+/* 16.3.2 Text Indent */
+p.test {
+  text-indent: 50px;
+}
+
+/* 16.4 CSS Fonts */
+section:last-of-type p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #2c3e50;
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/my.png" type="image/x-icon" />
+    <link rel="stylesheet" href="chapter13.css" />
+    <title>Chapter 013</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="navtext">CSS CASCADING</h1>
+    </header>
+    <main class="content">
+       <!-- 13.1 Rule 1: The Last Declaration Will Win -->
+    <section class="section-rule1">
+      <h2>13.1 Last Declaration Wins</h2>
+      <h1>My first heading</h1>
+      <p>My first paragraph (should be blue based on internal styles).</p>
+    </section>
+
+    <hr />
+
+    <!-- 13.2 Rule 2: The More Specific Declaration Will Win -->
+    <section>
+      <h2>13.2 Specificity Rules</h2>
+      <h1 id="heading-one" class="heading first">My First Heading</h1>
+      <p>My first paragraph.</p>
+      <h1 id="heading-two" class="heading">My Second Heading</h1>
+      <p>My second paragraph.</p>
+    </section>
+
+    <hr />
+
+    <!-- 13.3 Rule 3: Inline Style Preferred to Internal/External -->
+    <section>
+      <h2>13.3 Inline Style Preference</h2>
+      <!-- The inline red color overrides the internal green color -->
+      <h1 id="heading-one-r3" style="color: red">My First Heading</h1>
+      <p>My first paragraph (should be red).</p>
+    </section>
+
+    <hr />
+
+    <!-- 13.4 Rule 4: "!important" is the Strongest Rule -->
+    <section>
+      <h2>13.4 The !important Rule</h2>
+      <!-- The !important green in the head overrides this inline red -->
+      <h1 id="heading-one-r4" style="color: red">My First Heading</h1>
+      <p>My first paragraph (should be green because of !important).</p>
+    </section>
+
+    <hr />
+
+    <!-- 13.5 Inheritance -->
+    <section>
+      <h2>13.5 Inheritance</h2>
+      <article class="parent">
+        <h1>Heading</h2>
+        <p class="line first-line">First line (inherits red from parent).</p>
+        <p class="line second-line">Second line (set to green).</p>
+      </article>
+    </section>
+
+    </main>
+
+    <div class="btncontainer">
+      <div class="btn1">
+        <button><a href="chapter12.html"> &leftarrow; chapter 12</a></button>
+      </div>
+      <div class="btn2">
+        <button><a href="chapter14.html"> Next &RightArrow;</a></button>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        &copy; 2026 atikurrahman. All Rights Reserved | Powered By Atikur
+        Rahman.
+      </div>
+    </footer>
+  </body>
+</html>

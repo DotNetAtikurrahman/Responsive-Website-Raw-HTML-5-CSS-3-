@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/my.png" type="image/x-icon" />
+    <link rel="stylesheet" href="chapter18.css" />
+    <title>Chapter 018</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="navtext">CSS DISPLAY</h1>
+    </header>
+    <main class="content">
+      <!-- 1.1 Display -->
+      <section>
+        <h2>1 Display (Inline-Block)</h2>
+        <div class="container">
+          <div class="inline-blocks">I'm the 1st child</div>
+          <div class="inline-blocks">I'm the 2nd child</div>
+          <div class="normal-blocks">I'm the 3rd child</div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 1.2 Visibility -->
+      <section>
+        <h2>1 Visibility vs. Display: None</h2>
+        <p>
+          This is the <span class="hidden">hidden</span> element (display: none)
+        </p>
+        <p>
+          This is the <span class="invisible">invisible</span> element
+          (visibility: hidden)
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- 2 CSS Object-fit -->
+      <section>
+        <h2>2 CSS Object-fit</h2>
+        <!-- Use a 150x150px image for this test -->
+        <img src="images/images.png" alt="Object-fit test" />
+      </section>
+
+      <hr />
+
+      <!-- 3 Cursor -->
+      <section>
+        <h2>3 Cursor Styles</h2>
+        <p class="my-element">
+          Hover over this paragraph to see the cursor change.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- 4 CSS Overflow -->
+      <section>
+        <h2>4 CSS Overflow</h2>
+        <div class="container-overflow">
+          <div class="child-overflow">
+            I am the content that might overflow.
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 5 CSS Opacity -->
+      <section>
+        <h2>5 CSS Opacity vs. RGBA</h2>
+        <div class="container-opacity-base">
+          <div class="child-border">I'm a normal child element</div>
+        </div>
+        <div class="container-opacity-base opacity-rule">
+          <div class="child-border">I'm affected by parent opacity</div>
+        </div>
+        <div class="container-transparent">
+          <div class="child-border">I use RGBA (text is opaque)</div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 6 CSS Shadows -->
+      <section>
+        <h2>6 CSS Shadows</h2>
+        <h1>This is a heading with text-shadow</h1>
+        <div class="box-shadow-demo">This is a div with box-shadow</div>
+      </section>
+
+      <hr />
+
+      <!-- 7 CSS Multiple Columns -->
+      <section>
+        <h2>7 Multiple Columns</h2>
+        <div class="newspaper">
+          <h1>Newspaper Heading (Spanned)</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+            velit esse molestie consequat.
+          </p>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 8 CSS Tables -->
+      <section>
+        <h2>8 CSS Tables</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Corner</td>
+            </tr>
+            <tr>
+              <td>Neo</td>
+              <td>D. Truman</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr />
+
+      <!-- 9 CSS Lists -->
+      <section>
+        <h2>9 CSS Lists</h2>
+        <div class="col">
+          <p>Unordered lists:</p>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+          <ul class="circle">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+          <ul class="square">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+        </div>
+        <div class="col">
+          <p>Ordered lists:</p>
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ol>
+          <ol class="upper-roman">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ol>
+          <ol class="lower-alpha">
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ol>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 10 CSS Transforms -->
+      <section>
+        <h2>10 CSS Transforms</h2>
+
+        <h3>Move (Translate)</h3>
+        <div>First paragraph</div>
+        <div class="test-move">Second paragraph (Moved)</div>
+        <div>Third paragraph</div>
+
+        <h3>Scale</h3>
+        <div>First paragraph</div>
+        <div class="test-scale">Second paragraph (Scaled)</div>
+
+        <h3>Rotate</h3>
+        <div class="test-rotate1">1st paragraph (RotateX)</div>
+        <div class="test-rotate2">2nd paragraph (RotateY)</div>
+        <div class="test-rotate3">3rd paragraph (RotateZ)</div>
+
+        <h3>Skew</h3>
+        <div class="test-skew1">1st paragraph (SkewX)</div>
+        <div class="test-skew2">2nd paragraph (SkewY)</div>
+        <div class="test-skew3">3rd paragraph (Skew X&Y)</div>
+      </section>
+    </main>
+
+    <div class="btncontainer">
+      <div class="btn1">
+        <button><a href="chapter17.html"> &leftarrow; Chapter 17</a></button>
+      </div>
+      <div class="btn2">
+        <button><a href="chapter19.html"> Next &RightArrow;</a></button>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        &copy; 2026 atikurrahman. All Rights Reserved | Powered By Atikur
+        Rahman.
+      </div>
+    </footer>
+  </body>
+</html>

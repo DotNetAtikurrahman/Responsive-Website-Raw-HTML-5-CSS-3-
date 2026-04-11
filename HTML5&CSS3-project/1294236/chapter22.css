@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f8f9fa;
+}
+header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navtext {
+  text-align: center;
+  border-bottom: 1px solid #dadce0;
+  color: #5f6368;
+  padding: 1%;
+}
+.copyright {
+  background-color: #202124;
+  text-align: center;
+  margin-top: 60px;
+  padding: 1%;
+  border-top: 1px solid #3c4043;
+  font-size: 1rem;
+  color: #afb6be;
+}
+.btncontainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+button {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.3);
+}
+button a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 58px;
+}
+button a:hover {
+  background-color: #1a73e8;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 #1a73e8;
+}
+/*chapter 22*/
+
+/*desktop approch first hence i write css code for desktop last so it get last into first for mobile approch just reverse*/
+
+h3 {
+  text-align: center;
+  margin: 60px 0px;
+}
+
+/* responsive for phone*/
+@media (min-width: 320px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    width: 100%;
+  }
+  .items {
+    padding: 5px;
+    text-align: justify;
+    background-color: #faffef;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    color: #5f6368;
+    font-size: 12px;
+  }
+  h3 {
+    text-align: center;
+    margin: 20px 10px;
+    font-size: 14px;
+  }
+}
+/* responsive for tablet*/
+@media (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+  .items {
+    padding: 20px;
+    text-align: justify;
+    background-color: #eff2fd;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    color: #5f6368;
+  }
+}
+/* responsive for desktop*/
+
+@media (min-width: 1200px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+  }
+  .items {
+    padding: 25px;
+    text-align: justify;
+    background-color: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    color: #5f6368;
+    font-size: 16px;
+  }
+}

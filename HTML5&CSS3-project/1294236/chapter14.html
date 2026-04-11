@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/my.png" type="image/x-icon" />
+    <link rel="stylesheet" href="chapter14.css" />
+    <title>Chapter 014</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="navtext">CSS BOX MODEL</h1>
+    </header>
+
+    <main class="content">
+      <!-- 14.1 Box Sizing Types -->
+      <section>
+        <h2>14.1 Box Sizing (Border Box vs. Content Box)</h2>
+        <pre id="my-element">
+#my-element {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 5px solid red;
+  margin: 8px;
+  box-sizing: border-box;
+}
+      </pre
+        >
+        <span id="result"></span>
+        <!-- Script provided in the book to calculate actual element size -->
+        <script>
+          var myElement = document.getElementById("my-element");
+          var width = myElement.offsetWidth;
+          var height = myElement.offsetHeight;
+          document.getElementById("result").innerHTML =
+            "Actual Element size: width = " + width + ", height = " + height;
+        </script>
+      </section>
+
+      <hr />
+
+      <!-- 14.2 CSS Margins -->
+      <section>
+        <h2>14.2 CSS Margins & Collapsing</h2>
+        <div id="parent-margin">
+          <div id="child-margin">
+            This element demonstrates individual side margins.
+          </div>
+        </div>
+
+        <div id="parent-auto">
+          <div id="child-auto">This element has an auto margin (centered).</div>
+        </div>
+
+        <div id="parent-collapse">
+          <div id="child-one">This element has a margin of 30px.</div>
+          <div id="child-two">
+            This element has a margin of 60px (demonstrates collapsing).
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 14.3 - 14.5: Outline, Borders, and Padding -->
+      <section>
+        <h2>14.3 - 14.5 Outline, Borders, and Padding</h2>
+        <p class="box-demo">
+          This paragraph is used to test outline, border styles, and padding.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- 14.4.2 CSS Border Radius -->
+      <section>
+        <h2>14.4.2 CSS Border Radius</h2>
+        <p>border-radius: 10px:</p>
+        <p id="p1-radius"></p>
+
+        <p>border-radius: 50%:</p>
+        <p id="p2-radius"></p>
+      </section>
+
+      <hr />
+
+      <!-- 14.4.3 CSS Border Images -->
+      <section>
+        <h2>14.4.3 CSS Border Images</h2>
+        <p id="border-img-round">Rounded Border Image</p>
+        <p id="border-img-stretch">Stretched Border Image</p>
+      </section>
+    </main>
+
+    <div class="btncontainer">
+      <div class="btn1">
+        <button><a href="chapter13.html"> &leftarrow; Chapter 13</a></button>
+      </div>
+      <div class="btn2">
+        <button><a href="chapter15.html"> Next &RightArrow;</a></button>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        &copy; 2026 atikurrahman. All Rights Reserved | Powered By Atikur
+        Rahman.
+      </div>
+    </footer>
+  </body>
+</html>
